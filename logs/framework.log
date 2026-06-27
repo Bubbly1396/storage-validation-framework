@@ -1,0 +1,11 @@
+2026-06-22 20:02:49,338 - INFO - SSH connection established to 10.101.9.159
+2026-06-22 20:03:10,464 - INFO - testing
+2026-06-22 20:03:10,464 - INFO - SSH disconnected successfully
+2026-06-22 20:03:33,276 - INFO - SSH connection established to 10.101.9.159
+2026-06-22 20:03:54,392 - INFO - testing
+2026-06-22 20:03:54,393 - INFO - SSH disconnected successfully
+2026-06-27 15:54:02,033 - INFO - SSH connection established to 192.168.0.103
+2026-06-27 15:54:02,060 - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2026-06-27 15:54:02,146 - INFO - Authentication (password) successful!
+2026-06-27 15:54:02,616 - INFO - testing
+2026-06-27 15:54:02,616 - INFO - SSH disconnected successfully
