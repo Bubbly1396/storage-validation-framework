@@ -21,7 +21,7 @@ class SSHClient:
             return self.client
         except Exception as e:
             print(f"connection failed {e}")
-            return None
+
 
         
     def execute(self, command):
@@ -29,7 +29,7 @@ class SSHClient:
             raise Exception("SSHClient not connected")
 
         stdin, stdout, stderr = self.client.exec_command(command)
-        
+
         return {
             "stdout" : stdout.read().decode(),
             "stderr" :  stderr.read().decode()
