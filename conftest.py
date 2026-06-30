@@ -4,7 +4,7 @@ import json
 from main.ssh_client import SSHClient
 from main.logger import Log
 
-@pytest.fixture(scope="session")
+@pytest.fixture(autouse=True)
 def ssh():
 
     logger = Log.get_logger()

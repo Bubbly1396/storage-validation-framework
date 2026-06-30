@@ -1,0 +1,2234 @@
+2026-06-30 15:24:06,875 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:24:06,993 - Storage_Framework - INFO - Executing command: uptime
+2026-06-30 15:24:07,488 - Storage_Framework - INFO -  15:24:07 up 20 min,  2 users,  load average: 0.00, 0.02, 0.07
+
+2026-06-30 15:24:07,490 - Storage_Framework - INFO - Executing command: lsblk
+2026-06-30 15:24:07,735 - Storage_Framework - INFO - testing
+2026-06-30 15:24:07,735 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:28:20,965 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:28:21,088 - Storage_Framework - INFO - Executing command: mdadm --version
+2026-06-30 15:28:21,574 - Storage_Framework - ERROR - mdadm - v4.4 - 2024-11-07 - 4
+
+2026-06-30 15:28:21,576 - Storage_Framework - INFO - Executing command: sudo mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sda /dev/sdb
+2026-06-30 15:29:46,128 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:29:46,250 - Storage_Framework - INFO - Executing command: uptim
+2026-06-30 15:29:46,756 - Storage_Framework - ERROR - bash: uptim: command not found
+
+2026-06-30 15:29:46,836 - Storage_Framework - INFO - Executing command: lsblk
+2026-06-30 15:29:46,926 - Storage_Framework - INFO - testing
+2026-06-30 15:29:46,926 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:31:15,348 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:31:15,474 - Storage_Framework - INFO - Executing command: smartctl --version
+2026-06-30 15:31:16,011 - Storage_Framework - INFO - smartctl 7.2 2020-12-30 r5155 [x86_64-linux-5.14.0-611.49.1.el9_7.x86_64] (local build)
+Copyright (C) 2002-20, Bruce Allen, Christian Franke, www.smartmontools.org
+
+smartctl comes with ABSOLUTELY NO WARRANTY. This is free
+software, and you are welcome to redistribute it under
+the terms of the GNU General Public License; either
+version 2, or (at your option) any later version.
+See http://www.gnu.org for further details.
+
+smartmontools release 7.2 dated 2020-12-30 at 16:48:30 UTC
+smartmontools SVN rev 5155 dated 2020-12-30 at 16:49:18
+smartmontools build host: x86_64-redhat-linux-gnu
+smartmontools build with: C++17, GCC 11.4.1 20231218 (Red Hat 11.4.1-3)
+smartmontools configure arguments: '--build=x86_64-redhat-linux-gnu' '--host=x86_64-redhat-linux-gnu' '--program-prefix=' '--disable-dependency-tracking' '--prefix=/usr' '--exec-prefix=/usr' '--bindir=/usr/bin' '--sbindir=/usr/sbin' '--sysconfdir=/etc' '--datadir=/usr/share' '--includedir=/usr/include' '--libdir=/usr/lib64' '--libexecdir=/usr/libexec' '--localstatedir=/var' '--sharedstatedir=/var/lib' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--with-selinux' '--with-libcap-ng=yes' '--with-libsystemd' '--with-systemdsystemunitdir=/usr/lib/systemd/system' '--sysconfdir=/etc/smartmontools/' '--with-systemdenvfile=/etc/sysconfig/smartmontools' 'build_alias=x86_64-redhat-linux-gnu' 'host_alias=x86_64-redhat-linux-gnu' 'CXX=g++' 'CXXFLAGS=-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64-v2 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection' 'LDFLAGS=-Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 ' 'CC=gcc' 'CFLAGS=-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64-v2 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection' 'PKG_CONFIG_PATH=:/usr/lib64/pkgconfig:/usr/share/pkgconfig'
+
+2026-06-30 15:31:16,016 - Storage_Framework - INFO - Executing command: smartctl -i /dev/sda
+2026-06-30 15:31:16,176 - Storage_Framework - INFO - smartctl 7.2 2020-12-30 r5155 [x86_64-linux-5.14.0-611.49.1.el9_7.x86_64] (local build)
+Copyright (C) 2002-20, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Device Model:     VBOX HARDDISK
+Serial Number:    VBaf5cb1c3-0914fbd9
+Firmware Version: 1.0
+User Capacity:    34,669,264,896 bytes [34.6 GB]
+Sector Size:      512 bytes logical/physical
+Device is:        Not in smartctl database [for details use: -P showall]
+ATA Version is:   ATA/ATAPI-6 published, ANSI INCITS 361-2002
+Local Time is:    Tue Jun 30 15:31:16 2026 IST
+SMART support is: Unavailable - device lacks SMART capability.
+
+
+2026-06-30 15:31:16,178 - Storage_Framework - INFO - Executing command: smartctl -A /dev/sda
+2026-06-30 15:31:16,344 - Storage_Framework - INFO - smartctl 7.2 2020-12-30 r5155 [x86_64-linux-5.14.0-611.49.1.el9_7.x86_64] (local build)
+Copyright (C) 2002-20, Bruce Allen, Christian Franke, www.smartmontools.org
+
+SMART support is: Unavailable - device lacks SMART capability.
+A mandatory SMART command failed: exiting. To continue, add one or more '-T permissive' options.
+
+2026-06-30 15:31:16,426 - Storage_Framework - INFO - testing
+2026-06-30 15:31:16,426 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:34:33,649 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:34:33,765 - Storage_Framework - INFO - Executing command: 
+        fio --name=test --rw=read --bs=4k --filename=/dev/sda  --runtime=30s             --iodepth=32             --ioengine=libaio
+        
+2026-06-30 15:35:05,162 - Storage_Framework - INFO - test: (g=0): rw=read, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=32
+fio-3.35
+Starting 1 process
+
+test: (groupid=0, jobs=1): err= 0: pid=3305: Tue Jun 30 15:35:05 2026
+  read: IOPS=69.7k, BW=272MiB/s (285MB/s)(8167MiB/30001msec)
+    slat (nsec): min=479, max=53819k, avg=12008.45, stdev=96170.62
+    clat (usec): min=2, max=53923, avg=446.21, stdev=698.98
+     lat (usec): min=28, max=53924, avg=458.22, stdev=711.17
+    clat percentiles (usec):
+     |  1.00th=[   32],  5.00th=[   35], 10.00th=[   41], 20.00th=[   60],
+     | 30.00th=[  149], 40.00th=[  202], 50.00th=[  330], 60.00th=[  437],
+     | 70.00th=[  545], 80.00th=[  709], 90.00th=[  963], 95.00th=[ 1188],
+     | 99.00th=[ 1778], 99.50th=[ 2089], 99.90th=[11338], 99.95th=[13173],
+     | 99.99th=[20579]
+   bw (  KiB/s): min=141636, max=426496, per=99.52%, avg=277408.97, stdev=84199.12, samples=59
+   iops        : min=35409, max=106624, avg=69352.03, stdev=21049.80, samples=59
+  lat (usec)   : 4=0.01%, 50=14.67%, 100=8.98%, 250=19.08%, 500=23.87%
+  lat (usec)   : 750=15.59%, 1000=8.85%
+  lat (msec)   : 2=8.37%, 4=0.40%, 10=0.08%, 20=0.11%, 50=0.01%
+  lat (msec)   : 100=0.01%
+  cpu          : usr=1.60%, sys=89.64%, ctx=4856, majf=0, minf=54
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=100.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.1%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2090754,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=32
+
+Run status group 0 (all jobs):
+   READ: bw=272MiB/s (285MB/s), 272MiB/s-272MiB/s (285MB/s-285MB/s), io=8167MiB (8564MB), run=30001-30001msec
+
+Disk stats (read/write):
+  sda: ios=34983/21, merge=0/7, ticks=25823/53, in_queue=25882, util=73.72%
+
+2026-06-30 15:35:05,163 - Storage_Framework - INFO - testing
+2026-06-30 15:35:05,163 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:35:18,429 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:35:18,549 - Storage_Framework - INFO - Executing command: sudo fio --version
+2026-06-30 15:35:19,183 - Storage_Framework - INFO - fio-3.35
+
+2026-06-30 15:35:19,184 - Storage_Framework - INFO - testing
+2026-06-30 15:35:19,184 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:35:19,185 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:35:19,342 - Storage_Framework - INFO - Executing command: 
+        fio --name=test --rw=read --bs=4k --filename=/dev/sda  --runtime=30s             --iodepth=32             --ioengine=libaio
+        
+2026-06-30 15:35:50,739 - Storage_Framework - INFO - test: (g=0): rw=read, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=32
+fio-3.35
+Starting 1 process
+
+test: (groupid=0, jobs=1): err= 0: pid=3394: Tue Jun 30 15:35:51 2026
+  read: IOPS=91.2k, BW=356MiB/s (374MB/s)(10.4GiB/30001msec)
+    slat (nsec): min=467, max=38243k, avg=8626.69, stdev=74307.40
+    clat (usec): min=3, max=38316, avg=337.73, stdev=529.27
+     lat (usec): min=8, max=38317, avg=346.35, stdev=539.02
+    clat percentiles (usec):
+     |  1.00th=[   32],  5.00th=[   34], 10.00th=[   37], 20.00th=[   50],
+     | 30.00th=[   71], 40.00th=[  149], 50.00th=[  194], 60.00th=[  306],
+     | 70.00th=[  429], 80.00th=[  537], 90.00th=[  758], 95.00th=[  988],
+     | 99.00th=[ 1565], 99.50th=[ 1811], 99.90th=[ 7242], 99.95th=[12518],
+     | 99.99th=[14615]
+   bw (  KiB/s): min=129256, max=464471, per=99.93%, avg=364676.39, stdev=71749.84, samples=59
+   iops        : min=32314, max=116117, avg=91168.93, stdev=17937.46, samples=59
+  lat (usec)   : 4=0.01%, 50=20.56%, 100=10.54%, 250=22.25%, 500=23.99%
+  lat (usec)   : 750=12.55%, 1000=5.26%
+  lat (msec)   : 2=4.50%, 4=0.22%, 10=0.04%, 20=0.08%, 50=0.01%
+  cpu          : usr=1.51%, sys=87.17%, ctx=7329, majf=0, minf=43
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=100.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.1%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2737159,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=32
+
+Run status group 0 (all jobs):
+   READ: bw=356MiB/s (374MB/s), 356MiB/s-356MiB/s (374MB/s-374MB/s), io=10.4GiB (11.2GB), run=30001-30001msec
+
+Disk stats (read/write):
+  sda: ios=45319/9, merge=1/4, ticks=31808/41, in_queue=31856, util=87.31%
+
+2026-06-30 15:35:50,740 - Storage_Framework - INFO - testing
+2026-06-30 15:35:50,740 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:37:29,088 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:37:29,204 - Storage_Framework - INFO - Executing command: sudo fio --version
+2026-06-30 15:37:29,758 - Storage_Framework - INFO - fio-3.35
+
+2026-06-30 15:37:29,759 - Storage_Framework - INFO - testing
+2026-06-30 15:37:29,759 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:37:29,761 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:37:29,915 - Storage_Framework - INFO - Executing command: sudo fio --help
+2026-06-30 15:37:30,144 - Storage_Framework - INFO - fio-3.35
+fio [options] [job options] <job file(s)>
+  --debug=options	Enable debug logging. May be one/more of:
+			process,file,io,mem,blktrace,verify,random,parse,
+			diskutil,job,mutex,profile,time,net,rate,compress,
+			steadystate,helperthread,zbd
+  --parse-only		Parse options only, don't start any IO
+  --merge-blktrace-only	Merge blktraces only, don't start any IO
+  --output		Write output to file
+  --bandwidth-log	Generate aggregate bandwidth logs
+  --minimal		Minimal (terse) output
+  --output-format=type	Output format (terse,json,json+,normal)
+  --terse-version=type	Set terse version output format (default 3, or 2 or 4 or 5)
+  --version		Print version info and exit
+  --help		Print this page
+  --cpuclock-test	Perform test/validation of CPU clock
+  --crctest=[type]	Test speed of checksum functions
+  --cmdhelp=cmd		Print command help, "all" for all of them
+  --enghelp=engine	Print ioengine help, or list available ioengines
+  --enghelp=engine,cmd	Print help for an ioengine cmd
+  --showcmd		Turn a job file into command line options
+  --eta=when		When ETA estimate should be printed
+            		May be "always", "never" or "auto"
+  --eta-newline=t	Force a new line for every 't' period passed
+  --status-interval=t	Force full status dump every 't' period passed
+  --readonly		Turn on safety read-only checks, preventing writes
+  --section=name	Only run specified section in job file, multiple sections can be specified
+  --alloc-size=kb	Set smalloc pool to this size in kb (def 16384)
+  --warnings-fatal	Fio parser warnings are fatal
+  --max-jobs=nr		Maximum number of threads/processes to support
+  --server=args		Start a backend fio server
+  --daemonize=pidfile	Background fio server, write pid to file
+  --client=hostname	Talk to remote backend(s) fio server at hostname
+  --remote-config=file	Tell fio server to load this local job file
+  --idle-prof=option	Report cpu idleness on a system or percpu basis
+			(option=system,percpu) or run unit work
+			calibration only (option=calibrate)
+  --inflate-log=log	Inflate and output compressed log
+  --trigger-file=file	Execute trigger cmd when file exists
+  --trigger-timeout=t	Execute trigger at this time
+  --trigger=cmd		Set this command as local trigger
+  --trigger-remote=cmd	Set this command as remote trigger
+  --aux-path=path	Use this path for fio state generated files
+
+Fio was written by Jens Axboe <axboe@kernel.dk>
+
+2026-06-30 15:37:30,145 - Storage_Framework - INFO - testing
+2026-06-30 15:37:30,145 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:37:30,147 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:37:30,283 - Storage_Framework - INFO - Executing command: 
+        fio --name=test --rw=read --bs=4k --filename=/dev/sda  --runtime=30s             --iodepth=32             --ioengine=libaio
+        
+2026-06-30 15:38:01,161 - Storage_Framework - INFO - test: (g=0): rw=read, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=32
+fio-3.35
+Starting 1 process
+
+test: (groupid=0, jobs=1): err= 0: pid=3518: Tue Jun 30 15:38:01 2026
+  read: IOPS=88.5k, BW=346MiB/s (363MB/s)(10.1GiB/30001msec)
+    slat (nsec): min=459, max=74793k, avg=8814.09, stdev=86906.55
+    clat (usec): min=27, max=75005, avg=348.70, stdev=618.49
+     lat (usec): min=28, max=75006, avg=357.52, stdev=630.11
+    clat percentiles (usec):
+     |  1.00th=[   32],  5.00th=[   34], 10.00th=[   37], 20.00th=[   51],
+     | 30.00th=[  135], 40.00th=[  153], 50.00th=[  215], 60.00th=[  314],
+     | 70.00th=[  437], 80.00th=[  529], 90.00th=[  725], 95.00th=[  996],
+     | 99.00th=[ 1598], 99.50th=[ 1926], 99.90th=[11338], 99.95th=[12256],
+     | 99.99th=[13304]
+   bw (  KiB/s): min=202056, max=457908, per=100.00%, avg=354139.05, stdev=62043.11, samples=59
+   iops        : min=50514, max=114477, avg=88534.54, stdev=15510.76, samples=59
+  lat (usec)   : 50=18.64%, 100=8.93%, 250=23.65%, 500=26.82%, 750=12.53%
+  lat (usec)   : 1000=4.46%
+  lat (msec)   : 2=4.52%, 4=0.27%, 10=0.07%, 20=0.12%, 50=0.01%
+  lat (msec)   : 100=0.01%
+  cpu          : usr=1.25%, sys=88.40%, ctx=5925, majf=0, minf=44
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=100.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.1%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2656014,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=32
+
+Run status group 0 (all jobs):
+   READ: bw=346MiB/s (363MB/s), 346MiB/s-346MiB/s (363MB/s-363MB/s), io=10.1GiB (10.9GB), run=30001-30001msec
+
+Disk stats (read/write):
+  sda: ios=45063/8, merge=1/2, ticks=29506/25, in_queue=29539, util=86.43%
+
+2026-06-30 15:38:01,162 - Storage_Framework - INFO - testing
+2026-06-30 15:38:01,163 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:47:32,849 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:47:32,976 - Storage_Framework - INFO - Executing command: sudo fio --version
+2026-06-30 15:47:33,668 - Storage_Framework - INFO - fio-3.35
+
+2026-06-30 15:47:33,669 - Storage_Framework - INFO - testing
+2026-06-30 15:47:33,669 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:47:33,671 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:47:33,838 - Storage_Framework - INFO - Executing command: sudo fio --help
+2026-06-30 15:47:34,059 - Storage_Framework - INFO - fio-3.35
+fio [options] [job options] <job file(s)>
+  --debug=options	Enable debug logging. May be one/more of:
+			process,file,io,mem,blktrace,verify,random,parse,
+			diskutil,job,mutex,profile,time,net,rate,compress,
+			steadystate,helperthread,zbd
+  --parse-only		Parse options only, don't start any IO
+  --merge-blktrace-only	Merge blktraces only, don't start any IO
+  --output		Write output to file
+  --bandwidth-log	Generate aggregate bandwidth logs
+  --minimal		Minimal (terse) output
+  --output-format=type	Output format (terse,json,json+,normal)
+  --terse-version=type	Set terse version output format (default 3, or 2 or 4 or 5)
+  --version		Print version info and exit
+  --help		Print this page
+  --cpuclock-test	Perform test/validation of CPU clock
+  --crctest=[type]	Test speed of checksum functions
+  --cmdhelp=cmd		Print command help, "all" for all of them
+  --enghelp=engine	Print ioengine help, or list available ioengines
+  --enghelp=engine,cmd	Print help for an ioengine cmd
+  --showcmd		Turn a job file into command line options
+  --eta=when		When ETA estimate should be printed
+            		May be "always", "never" or "auto"
+  --eta-newline=t	Force a new line for every 't' period passed
+  --status-interval=t	Force full status dump every 't' period passed
+  --readonly		Turn on safety read-only checks, preventing writes
+  --section=name	Only run specified section in job file, multiple sections can be specified
+  --alloc-size=kb	Set smalloc pool to this size in kb (def 16384)
+  --warnings-fatal	Fio parser warnings are fatal
+  --max-jobs=nr		Maximum number of threads/processes to support
+  --server=args		Start a backend fio server
+  --daemonize=pidfile	Background fio server, write pid to file
+  --client=hostname	Talk to remote backend(s) fio server at hostname
+  --remote-config=file	Tell fio server to load this local job file
+  --idle-prof=option	Report cpu idleness on a system or percpu basis
+			(option=system,percpu) or run unit work
+			calibration only (option=calibrate)
+  --inflate-log=log	Inflate and output compressed log
+  --trigger-file=file	Execute trigger cmd when file exists
+  --trigger-timeout=t	Execute trigger at this time
+  --trigger=cmd		Set this command as local trigger
+  --trigger-remote=cmd	Set this command as remote trigger
+  --aux-path=path	Use this path for fio state generated files
+
+Fio was written by Jens Axboe <axboe@kernel.dk>
+
+2026-06-30 15:47:34,059 - Storage_Framework - INFO - testing
+2026-06-30 15:47:34,060 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:47:34,063 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:47:34,210 - Storage_Framework - INFO - Executing command: 
+            fio --name=test --filename=/dev/sda --bs=4k --rw=randread             --runtime=30s --output-format=json --output=/home/basheer/fio.json
+2026-06-30 15:48:05,202 - Storage_Framework - INFO - 
+2026-06-30 15:48:05,203 - Storage_Framework - INFO - Executing command: cat /home/basheer/fio.json
+2026-06-30 15:48:05,334 - Storage_Framework - INFO - {
+  "fio version" : "fio-3.35",
+  "timestamp" : 1782814685,
+  "timestamp_ms" : 1782814685485,
+  "time" : "Tue Jun 30 15:48:05 2026",
+  "jobs" : [
+    {
+      "jobname" : "test",
+      "groupid" : 0,
+      "error" : 0,
+      "eta" : 0,
+      "elapsed" : 31,
+      "job options" : {
+        "name" : "test",
+        "filename" : "/dev/sda",
+        "bs" : "4k",
+        "rw" : "randread",
+        "runtime" : "30s"
+      },
+      "read" : {
+        "io_bytes" : 195371008,
+        "io_kbytes" : 190792,
+        "bw_bytes" : 6512149,
+        "bw" : 6359,
+        "iops" : 1589.880337,
+        "runtime" : 30001,
+        "total_ios" : 47698,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 307275,
+          "max" : 16881831,
+          "mean" : 618361.119334,
+          "stddev" : 255655.591314,
+          "N" : 47698,
+          "percentile" : {
+            "1.000000" : 342016,
+            "5.000000" : 350208,
+            "10.000000" : 362496,
+            "20.000000" : 456704,
+            "30.000000" : 497664,
+            "40.000000" : 528384,
+            "50.000000" : 561152,
+            "60.000000" : 618496,
+            "70.000000" : 692224,
+            "80.000000" : 757760,
+            "90.000000" : 888832,
+            "95.000000" : 1028096,
+            "99.000000" : 1384448,
+            "99.500000" : 1548288,
+            "99.900000" : 2023424,
+            "99.950000" : 2408448,
+            "99.990000" : 8716288
+          }
+        },
+        "lat_ns" : {
+          "min" : 307387,
+          "max" : 16881998,
+          "mean" : 618523.152732,
+          "stddev" : 255672.016248,
+          "N" : 47698
+        },
+        "bw_min" : 1186,
+        "bw_max" : 7374,
+        "bw_agg" : 100.000000,
+        "bw_mean" : 6375.033898,
+        "bw_dev" : 860.125030,
+        "bw_samples" : 59,
+        "iops_min" : 296,
+        "iops_max" : 1843,
+        "iops_mean" : 1593.542373,
+        "iops_stddev" : 215.040118,
+        "iops_samples" : 59
+      },
+      "write" : {
+        "io_bytes" : 0,
+        "io_kbytes" : 0,
+        "bw_bytes" : 0,
+        "bw" : 0,
+        "iops" : 0.000000,
+        "runtime" : 0,
+        "total_ios" : 0,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "bw_min" : 0,
+        "bw_max" : 0,
+        "bw_agg" : 0.000000,
+        "bw_mean" : 0.000000,
+        "bw_dev" : 0.000000,
+        "bw_samples" : 0,
+        "iops_min" : 0,
+        "iops_max" : 0,
+        "iops_mean" : 0.000000,
+        "iops_stddev" : 0.000000,
+        "iops_samples" : 0
+      },
+      "trim" : {
+        "io_bytes" : 0,
+        "io_kbytes" : 0,
+        "bw_bytes" : 0,
+        "bw" : 0,
+        "iops" : 0.000000,
+        "runtime" : 0,
+        "total_ios" : 0,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "bw_min" : 0,
+        "bw_max" : 0,
+        "bw_agg" : 0.000000,
+        "bw_mean" : 0.000000,
+        "bw_dev" : 0.000000,
+        "bw_samples" : 0,
+        "iops_min" : 0,
+        "iops_max" : 0,
+        "iops_mean" : 0.000000,
+        "iops_stddev" : 0.000000,
+        "iops_samples" : 0
+      },
+      "sync" : {
+        "total_ios" : 0,
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        }
+      },
+      "job_runtime" : 30000,
+      "usr_cpu" : 0.186667,
+      "sys_cpu" : 31.170000,
+      "ctx" : 47153,
+      "majf" : 0,
+      "minf" : 9,
+      "iodepth_level" : {
+        "1" : 100.000000,
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "iodepth_submit" : {
+        "0" : 0.000000,
+        "4" : 100.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        "64" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "iodepth_complete" : {
+        "0" : 0.000000,
+        "4" : 100.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        "64" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "latency_ns" : {
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "10" : 0.000000,
+        "20" : 0.000000,
+        "50" : 0.000000,
+        "100" : 0.000000,
+        "250" : 0.000000,
+        "500" : 0.000000,
+        "750" : 0.000000,
+        "1000" : 0.000000
+      },
+      "latency_us" : {
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "10" : 0.000000,
+        "20" : 0.000000,
+        "50" : 0.000000,
+        "100" : 0.000000,
+        "250" : 0.000000,
+        "500" : 31.309489,
+        "750" : 47.276615,
+        "1000" : 15.721833
+      },
+      "latency_ms" : {
+        "2" : 5.585140,
+        "4" : 0.085957,
+        "10" : 0.016772,
+        "20" : 0.010000,
+        "50" : 0.000000,
+        "100" : 0.000000,
+        "250" : 0.000000,
+        "500" : 0.000000,
+        "750" : 0.000000,
+        "1000" : 0.000000,
+        "2000" : 0.000000,
+        ">=2000" : 0.000000
+      },
+      "latency_depth" : 1,
+      "latency_target" : 0,
+      "latency_percentile" : 100.000000,
+      "latency_window" : 0
+    }
+  ],
+  "disk_util" : [
+    {
+      "name" : "sda",
+      "read_ios" : 47546,
+      "write_ios" : 11,
+      "read_merges" : 0,
+      "write_merges" : 1,
+      "read_ticks" : 24776,
+      "write_ticks" : 24,
+      "in_queue" : 24804,
+      "util" : 74.061570
+    }
+  ]
+}
+
+2026-06-30 15:48:05,417 - Storage_Framework - INFO - testing
+2026-06-30 15:48:05,418 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:49:10,645 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:49:10,757 - Storage_Framework - INFO - Executing command: sudo fio --version
+2026-06-30 15:49:11,300 - Storage_Framework - INFO - fio-3.35
+
+2026-06-30 15:49:11,301 - Storage_Framework - INFO - testing
+2026-06-30 15:49:11,302 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:49:11,303 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:49:11,455 - Storage_Framework - INFO - Executing command: sudo fio --help
+2026-06-30 15:49:11,673 - Storage_Framework - INFO - fio-3.35
+fio [options] [job options] <job file(s)>
+  --debug=options	Enable debug logging. May be one/more of:
+			process,file,io,mem,blktrace,verify,random,parse,
+			diskutil,job,mutex,profile,time,net,rate,compress,
+			steadystate,helperthread,zbd
+  --parse-only		Parse options only, don't start any IO
+  --merge-blktrace-only	Merge blktraces only, don't start any IO
+  --output		Write output to file
+  --bandwidth-log	Generate aggregate bandwidth logs
+  --minimal		Minimal (terse) output
+  --output-format=type	Output format (terse,json,json+,normal)
+  --terse-version=type	Set terse version output format (default 3, or 2 or 4 or 5)
+  --version		Print version info and exit
+  --help		Print this page
+  --cpuclock-test	Perform test/validation of CPU clock
+  --crctest=[type]	Test speed of checksum functions
+  --cmdhelp=cmd		Print command help, "all" for all of them
+  --enghelp=engine	Print ioengine help, or list available ioengines
+  --enghelp=engine,cmd	Print help for an ioengine cmd
+  --showcmd		Turn a job file into command line options
+  --eta=when		When ETA estimate should be printed
+            		May be "always", "never" or "auto"
+  --eta-newline=t	Force a new line for every 't' period passed
+  --status-interval=t	Force full status dump every 't' period passed
+  --readonly		Turn on safety read-only checks, preventing writes
+  --section=name	Only run specified section in job file, multiple sections can be specified
+  --alloc-size=kb	Set smalloc pool to this size in kb (def 16384)
+  --warnings-fatal	Fio parser warnings are fatal
+  --max-jobs=nr		Maximum number of threads/processes to support
+  --server=args		Start a backend fio server
+  --daemonize=pidfile	Background fio server, write pid to file
+  --client=hostname	Talk to remote backend(s) fio server at hostname
+  --remote-config=file	Tell fio server to load this local job file
+  --idle-prof=option	Report cpu idleness on a system or percpu basis
+			(option=system,percpu) or run unit work
+			calibration only (option=calibrate)
+  --inflate-log=log	Inflate and output compressed log
+  --trigger-file=file	Execute trigger cmd when file exists
+  --trigger-timeout=t	Execute trigger at this time
+  --trigger=cmd		Set this command as local trigger
+  --trigger-remote=cmd	Set this command as remote trigger
+  --aux-path=path	Use this path for fio state generated files
+
+Fio was written by Jens Axboe <axboe@kernel.dk>
+
+2026-06-30 15:49:11,674 - Storage_Framework - INFO - testing
+2026-06-30 15:49:11,675 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:49:11,677 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:49:11,824 - Storage_Framework - INFO - Executing command: 
+            fio --name=test --filename=/dev/sda --bs=4k --rw=randread             --runtime=30s --output-format=json --output=/home/basheer/fio.json
+2026-06-30 15:49:42,586 - Storage_Framework - INFO - 
+2026-06-30 15:49:42,587 - Storage_Framework - INFO - Executing command: cat /home/basheer/fio.json
+2026-06-30 15:49:42,752 - Storage_Framework - INFO - {
+  "fio version" : "fio-3.35",
+  "timestamp" : 1782814782,
+  "timestamp_ms" : 1782814782870,
+  "time" : "Tue Jun 30 15:49:42 2026",
+  "jobs" : [
+    {
+      "jobname" : "test",
+      "groupid" : 0,
+      "error" : 0,
+      "eta" : 0,
+      "elapsed" : 31,
+      "job options" : {
+        "name" : "test",
+        "filename" : "/dev/sda",
+        "bs" : "4k",
+        "rw" : "randread",
+        "runtime" : "30s"
+      },
+      "read" : {
+        "io_bytes" : 203210752,
+        "io_kbytes" : 198448,
+        "bw_bytes" : 6773465,
+        "bw" : 6614,
+        "iops" : 1653.678211,
+        "runtime" : 30001,
+        "total_ios" : 49612,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 297880,
+          "max" : 6943460,
+          "mean" : 601958.991655,
+          "stddev" : 207664.090378,
+          "N" : 49612,
+          "percentile" : {
+            "1.000000" : 342016,
+            "5.000000" : 354304,
+            "10.000000" : 366592,
+            "20.000000" : 460800,
+            "30.000000" : 489472,
+            "40.000000" : 514048,
+            "50.000000" : 544768,
+            "60.000000" : 593920,
+            "70.000000" : 675840,
+            "80.000000" : 741376,
+            "90.000000" : 847872,
+            "95.000000" : 978944,
+            "99.000000" : 1302528,
+            "99.500000" : 1433600,
+            "99.900000" : 1777664,
+            "99.950000" : 1941504,
+            "99.990000" : 2932736
+          }
+        },
+        "lat_ns" : {
+          "min" : 298155,
+          "max" : 6943625,
+          "mean" : 602100.535516,
+          "stddev" : 207670.343153,
+          "N" : 49612
+        },
+        "bw_min" : 5843,
+        "bw_max" : 7344,
+        "bw_agg" : 100.000000,
+        "bw_mean" : 6615.406780,
+        "bw_dev" : 266.882456,
+        "bw_samples" : 59,
+        "iops_min" : 1460,
+        "iops_max" : 1836,
+        "iops_mean" : 1653.644068,
+        "iops_stddev" : 66.728416,
+        "iops_samples" : 59
+      },
+      "write" : {
+        "io_bytes" : 0,
+        "io_kbytes" : 0,
+        "bw_bytes" : 0,
+        "bw" : 0,
+        "iops" : 0.000000,
+        "runtime" : 0,
+        "total_ios" : 0,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "bw_min" : 0,
+        "bw_max" : 0,
+        "bw_agg" : 0.000000,
+        "bw_mean" : 0.000000,
+        "bw_dev" : 0.000000,
+        "bw_samples" : 0,
+        "iops_min" : 0,
+        "iops_max" : 0,
+        "iops_mean" : 0.000000,
+        "iops_stddev" : 0.000000,
+        "iops_samples" : 0
+      },
+      "trim" : {
+        "io_bytes" : 0,
+        "io_kbytes" : 0,
+        "bw_bytes" : 0,
+        "bw" : 0,
+        "iops" : 0.000000,
+        "runtime" : 0,
+        "total_ios" : 0,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "bw_min" : 0,
+        "bw_max" : 0,
+        "bw_agg" : 0.000000,
+        "bw_mean" : 0.000000,
+        "bw_dev" : 0.000000,
+        "bw_samples" : 0,
+        "iops_min" : 0,
+        "iops_max" : 0,
+        "iops_mean" : 0.000000,
+        "iops_stddev" : 0.000000,
+        "iops_samples" : 0
+      },
+      "sync" : {
+        "total_ios" : 0,
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        }
+      },
+      "job_runtime" : 30000,
+      "usr_cpu" : 0.100000,
+      "sys_cpu" : 30.400000,
+      "ctx" : 49144,
+      "majf" : 0,
+      "minf" : 10,
+      "iodepth_level" : {
+        "1" : 100.000000,
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "iodepth_submit" : {
+        "0" : 0.000000,
+        "4" : 100.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        "64" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "iodepth_complete" : {
+        "0" : 0.000000,
+        "4" : 100.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        "64" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "latency_ns" : {
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "10" : 0.000000,
+        "20" : 0.000000,
+        "50" : 0.000000,
+        "100" : 0.000000,
+        "250" : 0.000000,
+        "500" : 0.000000,
+        "750" : 0.000000,
+        "1000" : 0.000000
+      },
+      "latency_us" : {
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "10" : 0.000000,
+        "20" : 0.000000,
+        "50" : 0.000000,
+        "100" : 0.000000,
+        "250" : 0.000000,
+        "500" : 33.949448,
+        "750" : 46.694348,
+        "1000" : 14.760542
+      },
+      "latency_ms" : {
+        "2" : 4.557365,
+        "4" : 0.036282,
+        "10" : 0.010000,
+        "20" : 0.000000,
+        "50" : 0.000000,
+        "100" : 0.000000,
+        "250" : 0.000000,
+        "500" : 0.000000,
+        "750" : 0.000000,
+        "1000" : 0.000000,
+        "2000" : 0.000000,
+        ">=2000" : 0.000000
+      },
+      "latency_depth" : 1,
+      "latency_target" : 0,
+      "latency_percentile" : 100.000000,
+      "latency_window" : 0
+    }
+  ],
+  "disk_util" : [
+    {
+      "name" : "sda",
+      "read_ios" : 49333,
+      "write_ios" : 9,
+      "read_merges" : 0,
+      "write_merges" : 1,
+      "read_ticks" : 24966,
+      "write_ticks" : 16,
+      "in_queue" : 24986,
+      "util" : 75.293606
+    }
+  ]
+}
+
+2026-06-30 15:49:42,830 - Storage_Framework - INFO - testing
+2026-06-30 15:49:42,830 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:52:02,155 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:52:02,269 - Storage_Framework - INFO - Executing command: sudo fio --version
+2026-06-30 15:52:02,785 - Storage_Framework - INFO - fio-3.35
+
+2026-06-30 15:52:02,786 - Storage_Framework - INFO - testing
+2026-06-30 15:52:02,786 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:52:02,788 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:52:02,933 - Storage_Framework - INFO - Executing command: sudo fio --help
+2026-06-30 15:52:03,162 - Storage_Framework - INFO - fio-3.35
+fio [options] [job options] <job file(s)>
+  --debug=options	Enable debug logging. May be one/more of:
+			process,file,io,mem,blktrace,verify,random,parse,
+			diskutil,job,mutex,profile,time,net,rate,compress,
+			steadystate,helperthread,zbd
+  --parse-only		Parse options only, don't start any IO
+  --merge-blktrace-only	Merge blktraces only, don't start any IO
+  --output		Write output to file
+  --bandwidth-log	Generate aggregate bandwidth logs
+  --minimal		Minimal (terse) output
+  --output-format=type	Output format (terse,json,json+,normal)
+  --terse-version=type	Set terse version output format (default 3, or 2 or 4 or 5)
+  --version		Print version info and exit
+  --help		Print this page
+  --cpuclock-test	Perform test/validation of CPU clock
+  --crctest=[type]	Test speed of checksum functions
+  --cmdhelp=cmd		Print command help, "all" for all of them
+  --enghelp=engine	Print ioengine help, or list available ioengines
+  --enghelp=engine,cmd	Print help for an ioengine cmd
+  --showcmd		Turn a job file into command line options
+  --eta=when		When ETA estimate should be printed
+            		May be "always", "never" or "auto"
+  --eta-newline=t	Force a new line for every 't' period passed
+  --status-interval=t	Force full status dump every 't' period passed
+  --readonly		Turn on safety read-only checks, preventing writes
+  --section=name	Only run specified section in job file, multiple sections can be specified
+  --alloc-size=kb	Set smalloc pool to this size in kb (def 16384)
+  --warnings-fatal	Fio parser warnings are fatal
+  --max-jobs=nr		Maximum number of threads/processes to support
+  --server=args		Start a backend fio server
+  --daemonize=pidfile	Background fio server, write pid to file
+  --client=hostname	Talk to remote backend(s) fio server at hostname
+  --remote-config=file	Tell fio server to load this local job file
+  --idle-prof=option	Report cpu idleness on a system or percpu basis
+			(option=system,percpu) or run unit work
+			calibration only (option=calibrate)
+  --inflate-log=log	Inflate and output compressed log
+  --trigger-file=file	Execute trigger cmd when file exists
+  --trigger-timeout=t	Execute trigger at this time
+  --trigger=cmd		Set this command as local trigger
+  --trigger-remote=cmd	Set this command as remote trigger
+  --aux-path=path	Use this path for fio state generated files
+
+Fio was written by Jens Axboe <axboe@kernel.dk>
+
+2026-06-30 15:52:03,164 - Storage_Framework - INFO - testing
+2026-06-30 15:52:03,164 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:52:03,166 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:52:03,311 - Storage_Framework - INFO - Executing command: 
+            fio --name=test --filename=/dev/sda --bs=4k --rw=randread             --runtime=30s --output-format=json --output=/home/basheer/fio.json
+2026-06-30 15:52:34,395 - Storage_Framework - INFO - 
+2026-06-30 15:52:34,396 - Storage_Framework - INFO - Executing command: cat /home/basheer/fio.json
+2026-06-30 15:52:34,521 - Storage_Framework - INFO - {
+  "fio version" : "fio-3.35",
+  "timestamp" : 1782814954,
+  "timestamp_ms" : 1782814954681,
+  "time" : "Tue Jun 30 15:52:34 2026",
+  "jobs" : [
+    {
+      "jobname" : "test",
+      "groupid" : 0,
+      "error" : 0,
+      "eta" : 0,
+      "elapsed" : 31,
+      "job options" : {
+        "name" : "test",
+        "filename" : "/dev/sda",
+        "bs" : "4k",
+        "rw" : "randread",
+        "runtime" : "30s"
+      },
+      "read" : {
+        "io_bytes" : 202170368,
+        "io_kbytes" : 197432,
+        "bw_bytes" : 6738787,
+        "bw" : 6580,
+        "iops" : 1645.211826,
+        "runtime" : 30001,
+        "total_ios" : 49358,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 304580,
+          "max" : 8557248,
+          "mean" : 605210.180781,
+          "stddev" : 212490.889004,
+          "N" : 49358,
+          "percentile" : {
+            "1.000000" : 342016,
+            "5.000000" : 354304,
+            "10.000000" : 370688,
+            "20.000000" : 460800,
+            "30.000000" : 489472,
+            "40.000000" : 514048,
+            "50.000000" : 544768,
+            "60.000000" : 593920,
+            "70.000000" : 675840,
+            "80.000000" : 749568,
+            "90.000000" : 864256,
+            "95.000000" : 995328,
+            "99.000000" : 1318912,
+            "99.500000" : 1433600,
+            "99.900000" : 1892352,
+            "99.950000" : 2113536,
+            "99.990000" : 3358720
+          }
+        },
+        "lat_ns" : {
+          "min" : 304710,
+          "max" : 8557406,
+          "mean" : 605355.392115,
+          "stddev" : 212504.487516,
+          "N" : 49358
+        },
+        "bw_min" : 5112,
+        "bw_max" : 7129,
+        "bw_agg" : 100.000000,
+        "bw_mean" : 6589.372881,
+        "bw_dev" : 330.765981,
+        "bw_samples" : 59,
+        "iops_min" : 1278,
+        "iops_max" : 1782,
+        "iops_mean" : 1647.152542,
+        "iops_stddev" : 82.695289,
+        "iops_samples" : 59
+      },
+      "write" : {
+        "io_bytes" : 0,
+        "io_kbytes" : 0,
+        "bw_bytes" : 0,
+        "bw" : 0,
+        "iops" : 0.000000,
+        "runtime" : 0,
+        "total_ios" : 0,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "bw_min" : 0,
+        "bw_max" : 0,
+        "bw_agg" : 0.000000,
+        "bw_mean" : 0.000000,
+        "bw_dev" : 0.000000,
+        "bw_samples" : 0,
+        "iops_min" : 0,
+        "iops_max" : 0,
+        "iops_mean" : 0.000000,
+        "iops_stddev" : 0.000000,
+        "iops_samples" : 0
+      },
+      "trim" : {
+        "io_bytes" : 0,
+        "io_kbytes" : 0,
+        "bw_bytes" : 0,
+        "bw" : 0,
+        "iops" : 0.000000,
+        "runtime" : 0,
+        "total_ios" : 0,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "bw_min" : 0,
+        "bw_max" : 0,
+        "bw_agg" : 0.000000,
+        "bw_mean" : 0.000000,
+        "bw_dev" : 0.000000,
+        "bw_samples" : 0,
+        "iops_min" : 0,
+        "iops_max" : 0,
+        "iops_mean" : 0.000000,
+        "iops_stddev" : 0.000000,
+        "iops_samples" : 0
+      },
+      "sync" : {
+        "total_ios" : 0,
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        }
+      },
+      "job_runtime" : 30000,
+      "usr_cpu" : 0.100000,
+      "sys_cpu" : 30.930000,
+      "ctx" : 49027,
+      "majf" : 0,
+      "minf" : 8,
+      "iodepth_level" : {
+        "1" : 100.000000,
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "iodepth_submit" : {
+        "0" : 0.000000,
+        "4" : 100.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        "64" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "iodepth_complete" : {
+        "0" : 0.000000,
+        "4" : 100.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        "64" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "latency_ns" : {
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "10" : 0.000000,
+        "20" : 0.000000,
+        "50" : 0.000000,
+        "100" : 0.000000,
+        "250" : 0.000000,
+        "500" : 0.000000,
+        "750" : 0.000000,
+        "1000" : 0.000000
+      },
+      "latency_us" : {
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "10" : 0.000000,
+        "20" : 0.000000,
+        "50" : 0.000000,
+        "100" : 0.000000,
+        "250" : 0.000000,
+        "500" : 35.080433,
+        "750" : 45.259127,
+        "1000" : 14.879047
+      },
+      "latency_ms" : {
+        "2" : 4.708457,
+        "4" : 0.066858,
+        "10" : 0.010000,
+        "20" : 0.000000,
+        "50" : 0.000000,
+        "100" : 0.000000,
+        "250" : 0.000000,
+        "500" : 0.000000,
+        "750" : 0.000000,
+        "1000" : 0.000000,
+        "2000" : 0.000000,
+        ">=2000" : 0.000000
+      },
+      "latency_depth" : 1,
+      "latency_target" : 0,
+      "latency_percentile" : 100.000000,
+      "latency_window" : 0
+    }
+  ],
+  "disk_util" : [
+    {
+      "name" : "sda",
+      "read_ios" : 49004,
+      "write_ios" : 8,
+      "read_merges" : 0,
+      "write_merges" : 2,
+      "read_ticks" : 25012,
+      "write_ticks" : 14,
+      "in_queue" : 25030,
+      "util" : 76.081271
+    }
+  ]
+}
+
+2026-06-30 15:52:34,632 - Storage_Framework - INFO - testing
+2026-06-30 15:52:34,632 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:54:02,320 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:54:02,434 - Storage_Framework - INFO - Executing command: sudo fio --version
+2026-06-30 15:54:02,911 - Storage_Framework - INFO - fio-3.35
+
+2026-06-30 15:54:02,912 - Storage_Framework - INFO - testing
+2026-06-30 15:54:02,912 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:54:02,914 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:54:03,063 - Storage_Framework - INFO - Executing command: sudo fio --help
+2026-06-30 15:54:03,303 - Storage_Framework - INFO - fio-3.35
+fio [options] [job options] <job file(s)>
+  --debug=options	Enable debug logging. May be one/more of:
+			process,file,io,mem,blktrace,verify,random,parse,
+			diskutil,job,mutex,profile,time,net,rate,compress,
+			steadystate,helperthread,zbd
+  --parse-only		Parse options only, don't start any IO
+  --merge-blktrace-only	Merge blktraces only, don't start any IO
+  --output		Write output to file
+  --bandwidth-log	Generate aggregate bandwidth logs
+  --minimal		Minimal (terse) output
+  --output-format=type	Output format (terse,json,json+,normal)
+  --terse-version=type	Set terse version output format (default 3, or 2 or 4 or 5)
+  --version		Print version info and exit
+  --help		Print this page
+  --cpuclock-test	Perform test/validation of CPU clock
+  --crctest=[type]	Test speed of checksum functions
+  --cmdhelp=cmd		Print command help, "all" for all of them
+  --enghelp=engine	Print ioengine help, or list available ioengines
+  --enghelp=engine,cmd	Print help for an ioengine cmd
+  --showcmd		Turn a job file into command line options
+  --eta=when		When ETA estimate should be printed
+            		May be "always", "never" or "auto"
+  --eta-newline=t	Force a new line for every 't' period passed
+  --status-interval=t	Force full status dump every 't' period passed
+  --readonly		Turn on safety read-only checks, preventing writes
+  --section=name	Only run specified section in job file, multiple sections can be specified
+  --alloc-size=kb	Set smalloc pool to this size in kb (def 16384)
+  --warnings-fatal	Fio parser warnings are fatal
+  --max-jobs=nr		Maximum number of threads/processes to support
+  --server=args		Start a backend fio server
+  --daemonize=pidfile	Background fio server, write pid to file
+  --client=hostname	Talk to remote backend(s) fio server at hostname
+  --remote-config=file	Tell fio server to load this local job file
+  --idle-prof=option	Report cpu idleness on a system or percpu basis
+			(option=system,percpu) or run unit work
+			calibration only (option=calibrate)
+  --inflate-log=log	Inflate and output compressed log
+  --trigger-file=file	Execute trigger cmd when file exists
+  --trigger-timeout=t	Execute trigger at this time
+  --trigger=cmd		Set this command as local trigger
+  --trigger-remote=cmd	Set this command as remote trigger
+  --aux-path=path	Use this path for fio state generated files
+
+Fio was written by Jens Axboe <axboe@kernel.dk>
+
+2026-06-30 15:54:03,304 - Storage_Framework - INFO - testing
+2026-06-30 15:54:03,305 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:54:03,306 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:54:03,459 - Storage_Framework - INFO - Executing command: 
+            fio --name=test --filename=/dev/sda --bs=4k --rw=randread             --runtime=30s --output-format=json --output=/home/basheer/fio.json
+2026-06-30 15:54:34,486 - Storage_Framework - INFO - 
+2026-06-30 15:54:34,486 - Storage_Framework - INFO - Executing command: cat /home/basheer/fio.json
+2026-06-30 15:54:34,624 - Storage_Framework - INFO - {
+  "fio version" : "fio-3.35",
+  "timestamp" : 1782815074,
+  "timestamp_ms" : 1782815074770,
+  "time" : "Tue Jun 30 15:54:34 2026",
+  "jobs" : [
+    {
+      "jobname" : "test",
+      "groupid" : 0,
+      "error" : 0,
+      "eta" : 0,
+      "elapsed" : 31,
+      "job options" : {
+        "name" : "test",
+        "filename" : "/dev/sda",
+        "bs" : "4k",
+        "rw" : "randread",
+        "runtime" : "30s"
+      },
+      "read" : {
+        "io_bytes" : 195104768,
+        "io_kbytes" : 190532,
+        "bw_bytes" : 6503275,
+        "bw" : 6350,
+        "iops" : 1587.713743,
+        "runtime" : 30001,
+        "total_ios" : 47633,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 287497,
+          "max" : 121154803,
+          "mean" : 626964.771020,
+          "stddev" : 748208.463856,
+          "N" : 47633,
+          "percentile" : {
+            "1.000000" : 337920,
+            "5.000000" : 350208,
+            "10.000000" : 362496,
+            "20.000000" : 456704,
+            "30.000000" : 489472,
+            "40.000000" : 522240,
+            "50.000000" : 561152,
+            "60.000000" : 618496,
+            "70.000000" : 684032,
+            "80.000000" : 757760,
+            "90.000000" : 888832,
+            "95.000000" : 1044480,
+            "99.000000" : 1400832,
+            "99.500000" : 1630208,
+            "99.900000" : 2539520,
+            "99.950000" : 3817472,
+            "99.990000" : 32899072
+          }
+        },
+        "lat_ns" : {
+          "min" : 287658,
+          "max" : 121155211,
+          "mean" : 627125.222430,
+          "stddev" : 748225.785209,
+          "N" : 47633
+        },
+        "bw_min" : 2702,
+        "bw_max" : 7392,
+        "bw_agg" : 100.000000,
+        "bw_mean" : 6375.254237,
+        "bw_dev" : 873.142789,
+        "bw_samples" : 59,
+        "iops_min" : 675,
+        "iops_max" : 1848,
+        "iops_mean" : 1593.593220,
+        "iops_stddev" : 218.364068,
+        "iops_samples" : 59
+      },
+      "write" : {
+        "io_bytes" : 0,
+        "io_kbytes" : 0,
+        "bw_bytes" : 0,
+        "bw" : 0,
+        "iops" : 0.000000,
+        "runtime" : 0,
+        "total_ios" : 0,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "bw_min" : 0,
+        "bw_max" : 0,
+        "bw_agg" : 0.000000,
+        "bw_mean" : 0.000000,
+        "bw_dev" : 0.000000,
+        "bw_samples" : 0,
+        "iops_min" : 0,
+        "iops_max" : 0,
+        "iops_mean" : 0.000000,
+        "iops_stddev" : 0.000000,
+        "iops_samples" : 0
+      },
+      "trim" : {
+        "io_bytes" : 0,
+        "io_kbytes" : 0,
+        "bw_bytes" : 0,
+        "bw" : 0,
+        "iops" : 0.000000,
+        "runtime" : 0,
+        "total_ios" : 0,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "bw_min" : 0,
+        "bw_max" : 0,
+        "bw_agg" : 0.000000,
+        "bw_mean" : 0.000000,
+        "bw_dev" : 0.000000,
+        "bw_samples" : 0,
+        "iops_min" : 0,
+        "iops_max" : 0,
+        "iops_mean" : 0.000000,
+        "iops_stddev" : 0.000000,
+        "iops_samples" : 0
+      },
+      "sync" : {
+        "total_ios" : 0,
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        }
+      },
+      "job_runtime" : 30000,
+      "usr_cpu" : 0.180000,
+      "sys_cpu" : 30.476667,
+      "ctx" : 47117,
+      "majf" : 0,
+      "minf" : 9,
+      "iodepth_level" : {
+        "1" : 100.000000,
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "iodepth_submit" : {
+        "0" : 0.000000,
+        "4" : 100.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        "64" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "iodepth_complete" : {
+        "0" : 0.000000,
+        "4" : 100.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        "64" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "latency_ns" : {
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "10" : 0.000000,
+        "20" : 0.000000,
+        "50" : 0.000000,
+        "100" : 0.000000,
+        "250" : 0.000000,
+        "500" : 0.000000,
+        "750" : 0.000000,
+        "1000" : 0.000000
+      },
+      "latency_us" : {
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "10" : 0.000000,
+        "20" : 0.000000,
+        "50" : 0.000000,
+        "100" : 0.000000,
+        "250" : 0.000000,
+        "500" : 33.464195,
+        "750" : 45.227048,
+        "1000" : 15.195348
+      },
+      "latency_ms" : {
+        "2" : 5.901371,
+        "4" : 0.163752,
+        "10" : 0.018894,
+        "20" : 0.012596,
+        "50" : 0.014696,
+        "100" : 0.000000,
+        "250" : 0.010000,
+        "500" : 0.000000,
+        "750" : 0.000000,
+        "1000" : 0.000000,
+        "2000" : 0.000000,
+        ">=2000" : 0.000000
+      },
+      "latency_depth" : 1,
+      "latency_target" : 0,
+      "latency_percentile" : 100.000000,
+      "latency_window" : 0
+    }
+  ],
+  "disk_util" : [
+    {
+      "name" : "sda",
+      "read_ios" : 47453,
+      "write_ios" : 9,
+      "read_merges" : 0,
+      "write_merges" : 3,
+      "read_ticks" : 25168,
+      "write_ticks" : 11,
+      "in_queue" : 25182,
+      "util" : 75.342603
+    }
+  ]
+}
+
+2026-06-30 15:54:34,762 - Storage_Framework - INFO - testing
+2026-06-30 15:54:34,763 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:55:24,708 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:55:24,823 - Storage_Framework - INFO - Executing command: sudo fio --version
+2026-06-30 15:55:25,339 - Storage_Framework - INFO - fio-3.35
+
+2026-06-30 15:55:25,340 - Storage_Framework - INFO - testing
+2026-06-30 15:55:25,340 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:55:25,342 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:55:25,494 - Storage_Framework - INFO - Executing command: sudo fio --help
+2026-06-30 15:55:25,717 - Storage_Framework - INFO - fio-3.35
+fio [options] [job options] <job file(s)>
+  --debug=options	Enable debug logging. May be one/more of:
+			process,file,io,mem,blktrace,verify,random,parse,
+			diskutil,job,mutex,profile,time,net,rate,compress,
+			steadystate,helperthread,zbd
+  --parse-only		Parse options only, don't start any IO
+  --merge-blktrace-only	Merge blktraces only, don't start any IO
+  --output		Write output to file
+  --bandwidth-log	Generate aggregate bandwidth logs
+  --minimal		Minimal (terse) output
+  --output-format=type	Output format (terse,json,json+,normal)
+  --terse-version=type	Set terse version output format (default 3, or 2 or 4 or 5)
+  --version		Print version info and exit
+  --help		Print this page
+  --cpuclock-test	Perform test/validation of CPU clock
+  --crctest=[type]	Test speed of checksum functions
+  --cmdhelp=cmd		Print command help, "all" for all of them
+  --enghelp=engine	Print ioengine help, or list available ioengines
+  --enghelp=engine,cmd	Print help for an ioengine cmd
+  --showcmd		Turn a job file into command line options
+  --eta=when		When ETA estimate should be printed
+            		May be "always", "never" or "auto"
+  --eta-newline=t	Force a new line for every 't' period passed
+  --status-interval=t	Force full status dump every 't' period passed
+  --readonly		Turn on safety read-only checks, preventing writes
+  --section=name	Only run specified section in job file, multiple sections can be specified
+  --alloc-size=kb	Set smalloc pool to this size in kb (def 16384)
+  --warnings-fatal	Fio parser warnings are fatal
+  --max-jobs=nr		Maximum number of threads/processes to support
+  --server=args		Start a backend fio server
+  --daemonize=pidfile	Background fio server, write pid to file
+  --client=hostname	Talk to remote backend(s) fio server at hostname
+  --remote-config=file	Tell fio server to load this local job file
+  --idle-prof=option	Report cpu idleness on a system or percpu basis
+			(option=system,percpu) or run unit work
+			calibration only (option=calibrate)
+  --inflate-log=log	Inflate and output compressed log
+  --trigger-file=file	Execute trigger cmd when file exists
+  --trigger-timeout=t	Execute trigger at this time
+  --trigger=cmd		Set this command as local trigger
+  --trigger-remote=cmd	Set this command as remote trigger
+  --aux-path=path	Use this path for fio state generated files
+
+Fio was written by Jens Axboe <axboe@kernel.dk>
+
+2026-06-30 15:55:25,718 - Storage_Framework - INFO - testing
+2026-06-30 15:55:25,718 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:55:25,721 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:55:25,849 - Storage_Framework - INFO - Executing command: 
+            fio --name=test --filename=/dev/sda --bs=4k --rw=randread             --runtime=30s --output-format=json --output=/home/basheer/fio.json
+2026-06-30 15:55:56,839 - Storage_Framework - INFO - 
+2026-06-30 15:55:56,839 - Storage_Framework - INFO - Executing command: cat /home/basheer/fio.json
+2026-06-30 15:55:56,965 - Storage_Framework - INFO - {
+  "fio version" : "fio-3.35",
+  "timestamp" : 1782815157,
+  "timestamp_ms" : 1782815157125,
+  "time" : "Tue Jun 30 15:55:57 2026",
+  "jobs" : [
+    {
+      "jobname" : "test",
+      "groupid" : 0,
+      "error" : 0,
+      "eta" : 0,
+      "elapsed" : 31,
+      "job options" : {
+        "name" : "test",
+        "filename" : "/dev/sda",
+        "bs" : "4k",
+        "rw" : "randread",
+        "runtime" : "30s"
+      },
+      "read" : {
+        "io_bytes" : 204439552,
+        "io_kbytes" : 199648,
+        "bw_bytes" : 6814424,
+        "bw" : 6654,
+        "iops" : 1663.677877,
+        "runtime" : 30001,
+        "total_ios" : 49912,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 282998,
+          "max" : 4286388,
+          "mean" : 598267.501002,
+          "stddev" : 199739.950245,
+          "N" : 49912,
+          "percentile" : {
+            "1.000000" : 342016,
+            "5.000000" : 350208,
+            "10.000000" : 366592,
+            "20.000000" : 460800,
+            "30.000000" : 489472,
+            "40.000000" : 514048,
+            "50.000000" : 544768,
+            "60.000000" : 593920,
+            "70.000000" : 667648,
+            "80.000000" : 733184,
+            "90.000000" : 839680,
+            "95.000000" : 970752,
+            "99.000000" : 1286144,
+            "99.500000" : 1384448,
+            "99.900000" : 1662976,
+            "99.950000" : 1843200,
+            "99.990000" : 2342912
+          }
+        },
+        "lat_ns" : {
+          "min" : 283162,
+          "max" : 4286518,
+          "mean" : 598430.912766,
+          "stddev" : 199754.491707,
+          "N" : 49912
+        },
+        "bw_min" : 5971,
+        "bw_max" : 7273,
+        "bw_agg" : 100.000000,
+        "bw_mean" : 6667.372881,
+        "bw_dev" : 280.133090,
+        "bw_samples" : 59,
+        "iops_min" : 1492,
+        "iops_max" : 1818,
+        "iops_mean" : 1666.677966,
+        "iops_stddev" : 70.073961,
+        "iops_samples" : 59
+      },
+      "write" : {
+        "io_bytes" : 0,
+        "io_kbytes" : 0,
+        "bw_bytes" : 0,
+        "bw" : 0,
+        "iops" : 0.000000,
+        "runtime" : 0,
+        "total_ios" : 0,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "bw_min" : 0,
+        "bw_max" : 0,
+        "bw_agg" : 0.000000,
+        "bw_mean" : 0.000000,
+        "bw_dev" : 0.000000,
+        "bw_samples" : 0,
+        "iops_min" : 0,
+        "iops_max" : 0,
+        "iops_mean" : 0.000000,
+        "iops_stddev" : 0.000000,
+        "iops_samples" : 0
+      },
+      "trim" : {
+        "io_bytes" : 0,
+        "io_kbytes" : 0,
+        "bw_bytes" : 0,
+        "bw" : 0,
+        "iops" : 0.000000,
+        "runtime" : 0,
+        "total_ios" : 0,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "bw_min" : 0,
+        "bw_max" : 0,
+        "bw_agg" : 0.000000,
+        "bw_mean" : 0.000000,
+        "bw_dev" : 0.000000,
+        "bw_samples" : 0,
+        "iops_min" : 0,
+        "iops_max" : 0,
+        "iops_mean" : 0.000000,
+        "iops_stddev" : 0.000000,
+        "iops_samples" : 0
+      },
+      "sync" : {
+        "total_ios" : 0,
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        }
+      },
+      "job_runtime" : 30000,
+      "usr_cpu" : 0.173333,
+      "sys_cpu" : 30.743333,
+      "ctx" : 49509,
+      "majf" : 0,
+      "minf" : 9,
+      "iodepth_level" : {
+        "1" : 100.000000,
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "iodepth_submit" : {
+        "0" : 0.000000,
+        "4" : 100.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        "64" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "iodepth_complete" : {
+        "0" : 0.000000,
+        "4" : 100.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        "64" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "latency_ns" : {
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "10" : 0.000000,
+        "20" : 0.000000,
+        "50" : 0.000000,
+        "100" : 0.000000,
+        "250" : 0.000000,
+        "500" : 0.000000,
+        "750" : 0.000000,
+        "1000" : 0.000000
+      },
+      "latency_us" : {
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "10" : 0.000000,
+        "20" : 0.000000,
+        "50" : 0.000000,
+        "100" : 0.000000,
+        "250" : 0.000000,
+        "500" : 34.767190,
+        "750" : 47.207084,
+        "1000" : 13.613961
+      },
+      "latency_ms" : {
+        "2" : 4.383715,
+        "4" : 0.026046,
+        "10" : 0.010000,
+        "20" : 0.000000,
+        "50" : 0.000000,
+        "100" : 0.000000,
+        "250" : 0.000000,
+        "500" : 0.000000,
+        "750" : 0.000000,
+        "1000" : 0.000000,
+        "2000" : 0.000000,
+        ">=2000" : 0.000000
+      },
+      "latency_depth" : 1,
+      "latency_target" : 0,
+      "latency_percentile" : 100.000000,
+      "latency_window" : 0
+    }
+  ],
+  "disk_util" : [
+    {
+      "name" : "sda",
+      "read_ios" : 49675,
+      "write_ios" : 9,
+      "read_merges" : 0,
+      "write_merges" : 1,
+      "read_ticks" : 25070,
+      "write_ticks" : 17,
+      "in_queue" : 25091,
+      "util" : 75.626149
+    }
+  ]
+}
+
+2026-06-30 15:55:57,047 - Storage_Framework - INFO - testing
+2026-06-30 15:55:57,047 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:56:35,897 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:56:35,997 - Storage_Framework - INFO - Executing command: sudo fio --version
+2026-06-30 15:56:36,535 - Storage_Framework - INFO - fio-3.35
+
+2026-06-30 15:56:36,536 - Storage_Framework - INFO - testing
+2026-06-30 15:56:36,537 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:56:36,538 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:56:36,687 - Storage_Framework - INFO - Executing command: sudo fio --help
+2026-06-30 15:56:36,932 - Storage_Framework - INFO - fio-3.35
+fio [options] [job options] <job file(s)>
+  --debug=options	Enable debug logging. May be one/more of:
+			process,file,io,mem,blktrace,verify,random,parse,
+			diskutil,job,mutex,profile,time,net,rate,compress,
+			steadystate,helperthread,zbd
+  --parse-only		Parse options only, don't start any IO
+  --merge-blktrace-only	Merge blktraces only, don't start any IO
+  --output		Write output to file
+  --bandwidth-log	Generate aggregate bandwidth logs
+  --minimal		Minimal (terse) output
+  --output-format=type	Output format (terse,json,json+,normal)
+  --terse-version=type	Set terse version output format (default 3, or 2 or 4 or 5)
+  --version		Print version info and exit
+  --help		Print this page
+  --cpuclock-test	Perform test/validation of CPU clock
+  --crctest=[type]	Test speed of checksum functions
+  --cmdhelp=cmd		Print command help, "all" for all of them
+  --enghelp=engine	Print ioengine help, or list available ioengines
+  --enghelp=engine,cmd	Print help for an ioengine cmd
+  --showcmd		Turn a job file into command line options
+  --eta=when		When ETA estimate should be printed
+            		May be "always", "never" or "auto"
+  --eta-newline=t	Force a new line for every 't' period passed
+  --status-interval=t	Force full status dump every 't' period passed
+  --readonly		Turn on safety read-only checks, preventing writes
+  --section=name	Only run specified section in job file, multiple sections can be specified
+  --alloc-size=kb	Set smalloc pool to this size in kb (def 16384)
+  --warnings-fatal	Fio parser warnings are fatal
+  --max-jobs=nr		Maximum number of threads/processes to support
+  --server=args		Start a backend fio server
+  --daemonize=pidfile	Background fio server, write pid to file
+  --client=hostname	Talk to remote backend(s) fio server at hostname
+  --remote-config=file	Tell fio server to load this local job file
+  --idle-prof=option	Report cpu idleness on a system or percpu basis
+			(option=system,percpu) or run unit work
+			calibration only (option=calibrate)
+  --inflate-log=log	Inflate and output compressed log
+  --trigger-file=file	Execute trigger cmd when file exists
+  --trigger-timeout=t	Execute trigger at this time
+  --trigger=cmd		Set this command as local trigger
+  --trigger-remote=cmd	Set this command as remote trigger
+  --aux-path=path	Use this path for fio state generated files
+
+Fio was written by Jens Axboe <axboe@kernel.dk>
+
+2026-06-30 15:56:36,933 - Storage_Framework - INFO - testing
+2026-06-30 15:56:36,933 - Storage_Framework - INFO - SSH disconnected successfully
+2026-06-30 15:56:36,935 - Storage_Framework - INFO - SSH connection established to 192.168.0.110
+2026-06-30 15:56:37,074 - Storage_Framework - INFO - Executing command: 
+            fio --name=test --filename=/dev/sda --bs=4k --rw=randread             --runtime=30s --output-format=json --output=/home/basheer/fio.json
+2026-06-30 15:57:08,062 - Storage_Framework - INFO - 
+2026-06-30 15:57:08,062 - Storage_Framework - INFO - Executing command: cat /home/basheer/fio.json
+2026-06-30 15:57:08,192 - Storage_Framework - INFO - {
+  "fio version" : "fio-3.35",
+  "timestamp" : 1782815228,
+  "timestamp_ms" : 1782815228348,
+  "time" : "Tue Jun 30 15:57:08 2026",
+  "jobs" : [
+    {
+      "jobname" : "test",
+      "groupid" : 0,
+      "error" : 0,
+      "eta" : 0,
+      "elapsed" : 31,
+      "job options" : {
+        "name" : "test",
+        "filename" : "/dev/sda",
+        "bs" : "4k",
+        "rw" : "randread",
+        "runtime" : "30s"
+      },
+      "read" : {
+        "io_bytes" : 204369920,
+        "io_kbytes" : 199580,
+        "bw_bytes" : 6812103,
+        "bw" : 6652,
+        "iops" : 1663.111230,
+        "runtime" : 30001,
+        "total_ios" : 49895,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 294179,
+          "max" : 6135173,
+          "mean" : 598733.141838,
+          "stddev" : 205847.404804,
+          "N" : 49895,
+          "percentile" : {
+            "1.000000" : 342016,
+            "5.000000" : 350208,
+            "10.000000" : 362496,
+            "20.000000" : 456704,
+            "30.000000" : 485376,
+            "40.000000" : 514048,
+            "50.000000" : 544768,
+            "60.000000" : 593920,
+            "70.000000" : 667648,
+            "80.000000" : 741376,
+            "90.000000" : 847872,
+            "95.000000" : 978944,
+            "99.000000" : 1302528,
+            "99.500000" : 1417216,
+            "99.900000" : 1728512,
+            "99.950000" : 1974272,
+            "99.990000" : 2932736
+          }
+        },
+        "lat_ns" : {
+          "min" : 294313,
+          "max" : 6136499,
+          "mean" : 598888.524562,
+          "stddev" : 205855.698672,
+          "N" : 49895
+        },
+        "bw_min" : 5915,
+        "bw_max" : 7240,
+        "bw_agg" : 100.000000,
+        "bw_mean" : 6659.576271,
+        "bw_dev" : 260.934871,
+        "bw_samples" : 59,
+        "iops_min" : 1478,
+        "iops_max" : 1810,
+        "iops_mean" : 1664.711864,
+        "iops_stddev" : 65.276877,
+        "iops_samples" : 59
+      },
+      "write" : {
+        "io_bytes" : 0,
+        "io_kbytes" : 0,
+        "bw_bytes" : 0,
+        "bw" : 0,
+        "iops" : 0.000000,
+        "runtime" : 0,
+        "total_ios" : 0,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "bw_min" : 0,
+        "bw_max" : 0,
+        "bw_agg" : 0.000000,
+        "bw_mean" : 0.000000,
+        "bw_dev" : 0.000000,
+        "bw_samples" : 0,
+        "iops_min" : 0,
+        "iops_max" : 0,
+        "iops_mean" : 0.000000,
+        "iops_stddev" : 0.000000,
+        "iops_samples" : 0
+      },
+      "trim" : {
+        "io_bytes" : 0,
+        "io_kbytes" : 0,
+        "bw_bytes" : 0,
+        "bw" : 0,
+        "iops" : 0.000000,
+        "runtime" : 0,
+        "total_ios" : 0,
+        "short_ios" : 0,
+        "drop_ios" : 0,
+        "slat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "clat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        },
+        "bw_min" : 0,
+        "bw_max" : 0,
+        "bw_agg" : 0.000000,
+        "bw_mean" : 0.000000,
+        "bw_dev" : 0.000000,
+        "bw_samples" : 0,
+        "iops_min" : 0,
+        "iops_max" : 0,
+        "iops_mean" : 0.000000,
+        "iops_stddev" : 0.000000,
+        "iops_samples" : 0
+      },
+      "sync" : {
+        "total_ios" : 0,
+        "lat_ns" : {
+          "min" : 0,
+          "max" : 0,
+          "mean" : 0.000000,
+          "stddev" : 0.000000,
+          "N" : 0
+        }
+      },
+      "job_runtime" : 30000,
+      "usr_cpu" : 0.140000,
+      "sys_cpu" : 30.683333,
+      "ctx" : 49420,
+      "majf" : 0,
+      "minf" : 8,
+      "iodepth_level" : {
+        "1" : 100.000000,
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "iodepth_submit" : {
+        "0" : 0.000000,
+        "4" : 100.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        "64" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "iodepth_complete" : {
+        "0" : 0.000000,
+        "4" : 100.000000,
+        "8" : 0.000000,
+        "16" : 0.000000,
+        "32" : 0.000000,
+        "64" : 0.000000,
+        ">=64" : 0.000000
+      },
+      "latency_ns" : {
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "10" : 0.000000,
+        "20" : 0.000000,
+        "50" : 0.000000,
+        "100" : 0.000000,
+        "250" : 0.000000,
+        "500" : 0.000000,
+        "750" : 0.000000,
+        "1000" : 0.000000
+      },
+      "latency_us" : {
+        "2" : 0.000000,
+        "4" : 0.000000,
+        "10" : 0.000000,
+        "20" : 0.000000,
+        "50" : 0.000000,
+        "100" : 0.000000,
+        "250" : 0.000000,
+        "500" : 34.957411,
+        "750" : 46.407456,
+        "1000" : 14.041487
+      },
+      "latency_ms" : {
+        "2" : 4.547550,
+        "4" : 0.044093,
+        "10" : 0.010000,
+        "20" : 0.000000,
+        "50" : 0.000000,
+        "100" : 0.000000,
+        "250" : 0.000000,
+        "500" : 0.000000,
+        "750" : 0.000000,
+        "1000" : 0.000000,
+        "2000" : 0.000000,
+        ">=2000" : 0.000000
+      },
+      "latency_depth" : 1,
+      "latency_target" : 0,
+      "latency_percentile" : 100.000000,
+      "latency_window" : 0
+    }
+  ],
+  "disk_util" : [
+    {
+      "name" : "sda",
+      "read_ios" : 49690,
+      "write_ios" : 7,
+      "read_merges" : 0,
+      "write_merges" : 2,
+      "read_ticks" : 25051,
+      "write_ticks" : 9,
+      "in_queue" : 25063,
+      "util" : 75.452965
+    }
+  ]
+}
+
+2026-06-30 15:57:08,270 - Storage_Framework - INFO - testing
+2026-06-30 15:57:08,270 - Storage_Framework - INFO - SSH disconnected successfully

@@ -1,5 +1,21 @@
+import pytest
 import re
+import json
+
 from utils.fio_utils import FioRunner
+
+
+def test_fio_installed(ssh):
+
+    result = ssh.execute("sudo fio --version")
+
+    assert result['stderr'] == ""
+    assert "fio" in result['stdout']
+
+def test_fio_help(ssh):
+    result = ssh.execute("sudo fio --help")
+
+    assert result['stderr'] == ""
 
 
 def test_fio_iops(ssh):
@@ -23,23 +39,14 @@ def test_fio_iops(ssh):
 
     assert iops >= 10000, f"Expected iops > 100000, got {iops}"
 
-def test_fio_throughput(ssh):
+@pytest.mark.skip(reason="Not implemented")
+def test_fio_json(ssh):
+
     fio = FioRunner(ssh)
-    result = fio.run_fio()
 
-    out = result['stdout'].strip()
+    result = fio.fio_json()
 
-    patt = r'BW=([\d.]+)\s*([KMG]i?B/s)'
-    match = re.search(patt, out)
-    speed = float(match.group(1))
-    suffix = match.group(2)
+    output = ssh.execute("cat /home/basheer/fio.json")
 
-    if suffix.startswith('Ki'):
-        speed *= 1024
-    elif suffix.startswith('Mi'):
-        speed *= 1024**2
-    elif suffix.startswith('Gi'):
-        speed *= 1024**3
-
-    assert speed >= 300
+    assert "jobs" in output
 

@@ -1,5 +1,9 @@
 import paramiko
 
+from main.logger import Log
+
+logger = Log.get_logger()
+
 class SSHClient:
     
     def __init__(self, host, username, password):
@@ -21,18 +25,25 @@ class SSHClient:
             return self.client
         except Exception as e:
             print(f"connection failed {e}")
-
+            return None
 
         
     def execute(self, command):
-        if not self.client:
-            raise Exception("SSHClient not connected")
+        logger.info(f"Executing command: {command}")
 
         stdin, stdout, stderr = self.client.exec_command(command)
 
+        output = stdout.read().decode()
+        error = stderr.read().decode()
+
+        if error:
+            logger.error(error)
+        else:
+            logger.info(output)
+
         return {
-            "stdout" : stdout.read().decode(),
-            "stderr" :  stderr.read().decode()
+            "stdout" : output,
+            "stderr" : error
         }
         
     def disconnect(self):
